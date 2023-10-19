@@ -1,0 +1,36 @@
+1、csv_to_coco.py
+更改配置文件：
+classname_to_id = {"person": 1}  # for your dataset classes
+csv_file = "labels.csv"  # annatations file path
+image_dir = "images/"    # original image path
+saved_coco_path = "./"   # path to save converted coco dataset
+
+2、csv_to_xml.py
+更改配置文件：
+csv_file = "labels.csv"
+saved_path = ".VOC2007/" # path to save converted voc dataset     
+image_save_path = "./JPEGImages/"   # converted voc images path
+image_raw_parh = "images/"          # original image path
+
+3、json_to_coco.py
+更改配置文件：
+classname_to_id = {"person": 1}  # for your dataset classes
+labelme_path = "labelme/"  # path for labelme dataset
+saved_coco_path = "./"     # path for saved coco dataset
+
+4、json_to_xml.py
+更改配置文件：
+labelme_path = "labelme/"  # path for labelme dataset
+saved_coco_path = "./"     # path for saved coco dataset
+
+5、csv_to_json.py
+更改配置文件：
+image_path = "./images/"  # path for images
+csv_file = "./"     # path for csv annotations
+
+6、xml_to_csv.py
+更改配置文件：
+os.chdir('path/to/annotations/')  # path for xml annotations
+path = 'path/to/annotations/' # 绝对路径
+img_path = 'path/to/images/'  # path for images
+xml_df.to_csv('labels.csv', index=None)  # name for labels
